@@ -25,7 +25,9 @@ class Game {
         playerCount = playerCountRef.val();
         player.getCount();
       }
+      console.log("entering form");
       form = new Form()
+      console.log("form created");
       form.display();
     }
 
@@ -73,6 +75,10 @@ class Game {
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y;
+          stroke(10);
+          fill("red");
+          ellipse(x, y, 60, 60);
+
         }
        
         //textSize(15);
